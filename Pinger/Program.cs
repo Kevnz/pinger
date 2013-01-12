@@ -18,8 +18,8 @@ namespace Pinger
 				var url = "http://newsaggr.apphb.com/feed/json";
 				try
 				{
-					var client = new RestClient("http://newsaggr.apphb.com");
-					var request = new RestRequest("feed/json", Method.GET);
+					var client = new RestClient("http://nznews.apphb.com");
+					var request = new RestRequest("news", Method.GET);
 
 					var response = client.Execute(request);
 					var content = response.Content;
