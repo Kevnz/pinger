@@ -19,11 +19,11 @@ namespace Pinger
 				try
 				{
 					var client = new RestClient("http://getnznews.com");
-					var request = new RestRequest("news", Method.GET);
+					var request = new RestRequest("newsfeed", Method.GET);
 
 					var response = client.Execute(request);
 					var content = response.Content;
-					Console.WriteLine(content);
+					 
 				}
 				catch (Exception e)
 				{
