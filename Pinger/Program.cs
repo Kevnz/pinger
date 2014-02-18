@@ -15,10 +15,10 @@ namespace Pinger
 			while (true)
 			{
 				Console.WriteLine("Get News Data");
-				var url = "http://getnznews.com/feed/json";
+				var url = "http://nznews.apphb.com/feed/json";
 				try
 				{
-					var client = new RestClient("http://getnznews.com");
+					var client = new RestClient("http://nznews.apphb.com/");
 					var request = new RestRequest("newsfeed", Method.GET);
 
 					var response = client.Execute(request);
